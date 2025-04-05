@@ -101,7 +101,7 @@ export default function TestimonialsPage() {
   );
 
   return (
-    <div className="container pt-10 pb-12 md:pb-24 lg:pb-32">
+    <div className="container pt-10 pb-12 md:pb-24 lg:pb-32 overflow-x-hidden">
       <BackgroundGradientAnimation
         containerClassName="absolute inset-0"
         colors={["#ff1493", "#8b5cf6", "#3b82f6", "#10b981", "#f59e0b"]}
@@ -128,8 +128,8 @@ export default function TestimonialsPage() {
         </div>
 
         <Tabs defaultValue="all">
-          <div className="flex justify-center mb-8">
-            <TabsList>
+          <div className="flex justify-center mb-8 overflow-x-auto pb-2 w-full">
+            <TabsList className="flex-nowrap">
               <TabsTrigger value="all">All Testimonials</TabsTrigger>
               <TabsTrigger value="web">Web Development</TabsTrigger>
               <TabsTrigger value="app">App Development</TabsTrigger>
