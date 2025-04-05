@@ -1,6 +1,7 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import FloatingDock from "@/components/floating-dock"
 import ScrollResponsiveLogo from "@/components/scroll-responsive-logo"
 import MobileMenu from "@/components/mobile-menu"
@@ -29,6 +30,7 @@ export default function RootLayout({
           </div>
           <FloatingDock />
         </div>
+        <SpeedInsights />
       </body>
     </html>
   )
