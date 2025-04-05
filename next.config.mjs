@@ -20,7 +20,13 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+    unoptimized: false,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -31,7 +37,10 @@ const nextConfig = {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
-    optimizeCss: true,
+    optimizeCss: {
+      minify: true,
+      inlineThreshold: 0,
+    },
     scrollRestoration: true,
   },
 }
