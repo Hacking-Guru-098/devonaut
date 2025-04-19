@@ -405,8 +405,8 @@ export default function Home() {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">Web Development Transformation</h3>
               <CompareSlider
-                firstImage="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&h=800&q=80"
-                secondImage="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&h=800&q=80"
+                firstImage="/images/Web_Transformation_First.png"
+                secondImage="/images/Web_Transformation_Second.png"
                 firstLabel="Before"
                 secondLabel="After"
                 aspectRatio="video"
@@ -419,7 +419,7 @@ export default function Home() {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">App Development Results</h3>
               <CompareSlider
-                firstImage="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&h=800&q=80"
+                firstImage="https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 secondImage="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&h=800&q=80"
                 firstLabel="Before"
                 secondLabel="After"

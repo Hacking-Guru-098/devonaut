@@ -49,6 +49,9 @@ export function EnquiryForm({ trigger }: EnquiryFormProps) {
     e.preventDefault()
     setIsSubmitting(true)
 
+    // In a production environment, this would send an email to hacking.guru.098@gmail.com
+    // with the form data using a backend service or API
+    
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false)

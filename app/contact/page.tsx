@@ -1,11 +1,9 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react"
 import BackgroundGradientAnimation from "@/components/background-gradient-animation"
+import ContactForm from "@/components/contact-form"
 
 export default function ContactPage() {
   return (
@@ -42,49 +40,7 @@ export default function ContactPage() {
               <CardDescription>Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <Label htmlFor="first-name">First name</Label>
-                    <Input id="first-name" placeholder="John" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="last-name">Last name</Label>
-                    <Input id="last-name" placeholder="Doe" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john.doe@example.com" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Project Inquiry" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Tell us about your project and requirements"
-                    className="min-h-[120px]"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="service">Service of Interest</Label>
-                  <select id="service" className="w-full rounded-md border border-input bg-background px-3 py-2">
-                    <option value="">Select a service</option>
-                    <option value="web">Web Development</option>
-                    <option value="app">App Development</option>
-                    <option value="security">Web & App Security</option>
-                    <option value="social-management">Social Media Management</option>
-                    <option value="social-marketing">Social Media Marketing</option>
-                    <option value="consulting">Technical Consulting</option>
-                  </select>
-                </div>
-                <Button type="submit" className="w-full">
-                  Send Message
-                </Button>
-              </form>
+              <ContactForm />
             </CardContent>
           </Card>
           <Card>
@@ -97,14 +53,14 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-primary" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-muted-foreground">contact@devonaut.com</p>
+                  <p className="text-muted-foreground">hacking.guru.098@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Phone className="h-6 w-6 text-primary" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+91 8368432917</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -112,9 +68,9 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-medium">Office</h3>
                   <p className="text-muted-foreground">
-                    123 Tech Street, Suite 100
+                    Delhi NCT
                     <br />
-                    San Francisco, CA 94103
+                    India
                   </p>
                 </div>
               </div>

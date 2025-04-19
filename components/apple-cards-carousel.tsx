@@ -96,7 +96,7 @@ export default function AppleCardsCarousel({ items, className }: AppleCardsCarou
               className="absolute inset-0"
               onAnimationStart={() => setIsAnimating(true)}
             >
-              <div className="h-full overflow-hidden rounded-2xl bg-white shadow-xl">
+              <div className="h-full overflow-hidden rounded-2xl bg-gray-900 shadow-xl">
                 <div className="relative h-[60%] w-full overflow-hidden">
                   <Image
                     src={items[activeIndex].image || "/placeholder.svg"}
@@ -104,11 +104,11 @@ export default function AppleCardsCarousel({ items, className }: AppleCardsCarou
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
                 <div className="p-8">
-                  <h2 className="mb-4 text-2xl font-bold">{items[activeIndex].title}</h2>
-                  <p className="text-gray-600">{items[activeIndex].description}</p>
+                  <h2 className="mb-4 text-2xl font-bold text-white">{items[activeIndex].title}</h2>
+                  <p className="text-gray-300">{items[activeIndex].description}</p>
                 </div>
               </div>
             </motion.div>
@@ -118,7 +118,7 @@ export default function AppleCardsCarousel({ items, className }: AppleCardsCarou
         <div className="mt-8 flex justify-between">
           <button
             onClick={handlePrevious}
-            className="rounded-full bg-white p-3 shadow-md transition-all hover:bg-gray-100"
+            className="rounded-full bg-gray-900 p-3 shadow-md transition-all hover:bg-gray-800 text-white"
             aria-label="Previous slide"
           >
             <ChevronLeft className="h-6 w-6" />
@@ -136,7 +136,7 @@ export default function AppleCardsCarousel({ items, className }: AppleCardsCarou
                 }}
                 className={cn(
                   "h-2 w-2 rounded-full transition-all",
-                  activeIndex === idx ? "w-6 bg-primary" : "bg-gray-300",
+                  activeIndex === idx ? "w-6 bg-primary" : "bg-gray-600",
                 )}
                 aria-label={`Go to slide ${idx + 1}`}
               />
@@ -145,7 +145,7 @@ export default function AppleCardsCarousel({ items, className }: AppleCardsCarou
 
           <button
             onClick={handleNext}
-            className="rounded-full bg-white p-3 shadow-md transition-all hover:bg-gray-100"
+            className="rounded-full bg-gray-900 p-3 shadow-md transition-all hover:bg-gray-800 text-white"
             aria-label="Next slide"
           >
             <ChevronRight className="h-6 w-6" />
